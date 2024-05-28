@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_internet" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Ooops!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="serif"
+        android:text="No internet, please turn on wifi or mobile data."
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Ok"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

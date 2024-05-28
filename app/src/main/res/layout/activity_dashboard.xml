@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_View"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/navigation_menu" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <GridLayout
+                    android:id="@+id/mainGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:columnOrderPreserved="false"
+                    android:paddingTop="10dp"
+                    android:rowCount="3">
+
+                    <!-- Row 1 -->
+
+                    <!-- Column 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ic_baseline_person_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="সদস্য তৈরি"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Column 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/cd" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="সিডি আদায়"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Row 2 -->
+
+                    <!-- Column 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#FFFFF7"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/loan" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="প্রিমিয়াম আদায়"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Column 2 -->
+                    <!--                    <androidx.cardview.widget.CardView-->
+                    <!--                        android:id="@+id/Button4"-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="0dp"-->
+                    <!--                        android:layout_rowWeight="1"-->
+                    <!--                        android:layout_columnWeight="1"-->
+                    <!--                        android:layout_marginLeft="6dp"-->
+                    <!--                        android:layout_marginRight="6dp"-->
+                    <!--                        android:layout_marginBottom="16dp"-->
+                    <!--                        android:background="#FFFFF7"-->
+                    <!--                        app:cardCornerRadius="8dp"-->
+                    <!--                        app:cardElevation="8dp">-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--                            android:gravity="center"-->
+                    <!--                            android:orientation="vertical">-->
+
+                    <!--                            <ImageView-->
+                    <!--                                android:layout_width="60dp"-->
+                    <!--                                android:layout_height="50dp"-->
+                    <!--                                android:layout_gravity="center_horizontal"-->
+                    <!--                                android:src="@drawable/invester" />-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:fontFamily="@font/solaimanlipi"-->
+                    <!--                                android:text="বিনিয়োগকারি তৈরি"-->
+                    <!--                                android:textAlignment="center"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:textSize="15sp"-->
+                    <!--                                android:textStyle="normal" />-->
+
+                    <!--                        </LinearLayout>-->
+
+                    <!--                    </androidx.cardview.widget.CardView>-->
+
+
+                    <!-- Row 2 -->
+
+                    <!-- Column 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button5"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#FFFFF7"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/cd" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="সঞ্চয় আদায়"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Column 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button6"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/loan" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="প্রিমিয়াম আবেদন"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button7"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#FFFFF7"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="56dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/withdraw" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="বিনিয়োগ বিবরণ"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button8"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/investment" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="সিডি আবেদন"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button9"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/loan" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="সিডি উত্তোলন"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button10"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/withdraw" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="সিডি মুনাফা উত্তোলন"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button11"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/savings" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="সাধারন সঞ্চয় উত্তোলন"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button12"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/loan" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="আপদকালিন ফি"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button13"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/admission" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="ভর্তি ফি "
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button14"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="51dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/bank" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="ব্যাংক হিসাব"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button15"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/loan" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="বিবিধ জমা/খরচ"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button16"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/information_searc" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="তথ্য অনুসন্ধান"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Button17"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/report" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/solaimanlipi"
+                                android:text="সকল কিছুর প্রতিবেদন"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--                    <androidx.cardview.widget.CardView-->
+                    <!--                        android:id="@+id/Button18"-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="0dp"-->
+                    <!--                        android:layout_rowWeight="1"-->
+                    <!--                        android:layout_columnWeight="1"-->
+                    <!--                        android:layout_marginLeft="6dp"-->
+                    <!--                        android:layout_marginRight="6dp"-->
+                    <!--                        android:layout_marginBottom="16dp"-->
+                    <!--                        android:backgroundTint="@color/white"-->
+                    <!--                        app:cardCornerRadius="8dp"-->
+                    <!--                        app:cardElevation="8dp">-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--                            android:gravity="center"-->
+                    <!--                            android:orientation="vertical">-->
+
+                    <!--                            <ImageView-->
+                    <!--                                android:layout_width="60dp"-->
+                    <!--                                android:layout_height="50dp"-->
+                    <!--                                android:layout_gravity="center_horizontal"-->
+                    <!--                                android:src="@drawable/loan" />-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:fontFamily="@font/solaimanlipi"-->
+                    <!--                                android:text="মেস/হোস্টেল"-->
+                    <!--                                android:textAlignment="center"-->
+                    <!--                                android:textColor="#353434"-->
+                    <!--                                android:textSize="15sp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </LinearLayout>-->
+
+                    <!--                    </androidx.cardview.widget.CardView>-->
+
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

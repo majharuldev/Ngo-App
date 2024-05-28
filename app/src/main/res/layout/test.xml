@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
+
+            <TableRow android:layout_marginVertical="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="সদস্য নং"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/customerIdTv"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="customer_id"
+                    android:textSize="16sp" />
+
+            </TableRow>
+            <TableRow android:layout_marginVertical="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="দলের নামঃ"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/customerIdT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="customer_id"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginVertical="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/regular"
+                    android:text="সদস্য নামঃ"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userNameTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular"
+                    android:text="name"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginVertical="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/regular"
+                    android:text="মোবাইলঃ"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userPhoneTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0122444"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/callUserIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="call"
+                    app:srcCompat="@drawable/ic_baseline_phone_enabled_24" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginVertical="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/regular"
+                    android:text="গ্রামের নামঃ"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userEmailTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="email"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginVertical="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="nid"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userNIDNumberTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="nid_number"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginVertical="2dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="location"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userDistrictTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular"
+                    android:text="location_name"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginVertical="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="profile_status"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userVerifyStatusTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Active"
+                    android:textColor="#43A047"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginVertical="2dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="last_sign_in"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userLastSignInTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular"
+                    android:text="18-Sep-2021"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginVertical="2dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="account_created"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userJoinDateTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular"
+                    android:text="18-Sep-2021"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginVertical="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="User Id"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text=":"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userIdTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="customer_id"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+        <TextView
+            android:id="@+id/checkStatusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="5dp"
+            android:text="Checked"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+

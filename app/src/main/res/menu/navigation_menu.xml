@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <group
+        android:id="@+id/group1"
+
+        android:checkableBehavior="single">
+        <item android:title="তালিকা">
+            <menu>
+
+                <item
+                    android:id="@+id/Developer"
+
+                    android:title="ডেভেলপার সম্পর্কে"
+
+                    />
+
+
+            </menu>
+
+
+        </item>
+
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item android:title="আরও">
+
+            <menu>
+                <it
+                    android:id="@+id/mShare"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="শেয়ার অ্যাপ" />
+
+                <item
+                    android:id="@+id/mExit"
+                    android:icon="@drawable/ic_baseline_exit_to_app_24"
+                    android:title="লগ আউট" />
+            </menu>
+
+
+        </item>
+
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="majharul.soft.pkss">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PKSS"
+        tools:targetApi="31">
+        <activity
+            android:name=".Cdabedonform"
+            android:label="সিডি আবেদন ফরম"
+            android:exported="false" />
+        <activity
+            android:name=".CdMemberList"
+            android:exported="false"
+            android:label="সিডি সদস্য তালিকা" />
+        <activity
+            android:name=".CdMunafaUttolon"
+            android:exported="false"
+            android:label="সিডি মুনাফা উত্তোলন" />
+        <activity
+            android:name=".CdWithDraw"
+            android:exported="false"
+            android:label="সিডি উত্তোলন" />
+        <activity
+            android:name=".CDAday"
+            android:exported="false"
+            android:label="সিডি আদায়" />
+        <activity
+            android:name=".bibidhjoma"
+            android:exported="false"
+            android:label="বিবিধ/জমা খরচ" />
+        <activity
+            android:name=".Admission"
+            android:exported="false"
+            android:label="ভর্তি ফি" />
+        <activity
+            android:name=".SavingwithList"
+            android:exported="false" />
+        <activity
+            android:name=".SavingAday"
+            android:exported="false"
+            android:label="সঞ্চয় আদায়" />
+        <activity
+            android:name=".SavingList"
+            android:exported="false"
+            android:label="সঞ্চয় আদায় তালিকা" />
+        <activity
+            android:name=".InvesterList"
+            android:exported="false"
+            android:label="সাধারন সঞ্চয় উত্তোলন তালিকা" />
+        <activity
+            android:name=".PremiyamBitorn"
+            android:exported="false"
+            android:label="প্রিমিয়াম বিতরণ" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:label="রেজিস্ট্রেশন" />
+        <activity
+            android:name=".InformationSearch"
+            android:exported="false"
+            android:label="তথ্য অনুসন্ধান" />
+        <activity
+            android:name=".SavingWithdrawGeneral"
+            android:exported="false"
+            android:label="সাধারন সঞ্চয় উত্তোলন" />
+        <activity
+            android:name=".BankHisab"
+            android:exported="false"
+            android:label="ব্যাংক হিসাব" />
+        <activity
+            android:name=".PremiyamInput"
+            android:exported="false"
+            android:label="প্রিমিয়াম আদায়" />
+        <activity
+            android:name=".PremiyamAday"
+            android:exported="false"
+            android:label="প্রিমিয়াম আদায়" />
+        <activity
+            android:name=".MemberList"
+            android:exported="false"
+            android:label="প্রিমিয়াম আবেদন" />
+        <activity
+            android:name=".Invester"
+            android:exported="false"
+            android:label=" বিনিয়োগকারি তৈরি" />
+        <activity
+            android:name=".memberCreate"
+            android:exported="false"
+            android:label="নতুন সদস্য তৈরি" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false"
+            android:label="ড্যাশবোর্ড" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
